@@ -1,0 +1,36 @@
+@use '_reset.scss';
+
+$메인색상 : #2a4c6e;
+$서브색상 : #333333;
+$기본사이즈 : 30px;
+
+.text {
+    font-size : $기본사이즈 + 2px;
+    width : (100px * 2);
+    height : (300px / 3)
+}
+h2 {
+    color:reset.$메인칼라;
+}
+
+.box {
+  background: $서브색상;
+}
+.btn {
+    font-size: 16px;
+    padding: 10px;
+    background: grey;
+}
+// .btn-green {
+//     @extend .btn;
+//     background: green;
+// }
+@mixin 버튼기본디자인($hall) {
+    font-size: 16px;
+    padding: 10px;
+    background: $hall;
+}
+.btn-green {
+    @include 버튼기본디자인(blue);
+    display: inline-block;
+}

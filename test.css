@@ -1,0 +1,30 @@
+h2 {
+  font-size: 40px;
+}
+
+.text {
+  font-size: 32px;
+  width: 200px;
+  height: 100px;
+}
+
+h2 {
+  color: brown;
+}
+
+.box {
+  background: #333333;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 10px;
+  background: grey;
+}
+
+.btn-green {
+  font-size: 16px;
+  padding: 10px;
+  background: blue;
+  display: inline-block;
+}/*# sourceMappingURL=test.css.map */
