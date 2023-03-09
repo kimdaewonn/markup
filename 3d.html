@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뒤집기</title>
+    <style>
+        .flip-outer {
+            width: 300px;
+            height: 300px;
+        }
+
+        .flip-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: all 1s;
+            transform-style: preserve-3d;
+        }
+        .flip-inner:hover {
+            transform: rotateY(180deg);
+        } 
+        .front {
+            width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            z-index: 1;
+        }
+        .back {
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+            box-sizing: border-box;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+            transform: rotateY(180deg);
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flip-outer">
+        <div class="flip-inner">
+          <img src="profile.png" class="front">
+          <div class="back">
+            <h4>개발자 김대원</h4>
+            <p>Frontend Developer</p>
+          </div>
+        </div>
+     </div> 
+</body>
+</html>

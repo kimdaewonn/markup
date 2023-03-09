@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-areas: 
+            '헤더 헤더 헤더 헤더'
+            '사이드 사이드 . .'
+            '사이드 사이드 . .'
+            ;
+        }
+        .grid-container div{
+            border: 1px solid black;
+        }
+        .grid-nav {
+            grid-area: 헤더;
+        }
+        .grid-sidebar {
+            grid-area: 사이드;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-nav">헤더</div>
+        <div class="grid-sidebar">사이드바</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
